@@ -20,7 +20,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"raoul2000\\widget\\backstrech\\" : ""
+			"raoul2000\\widget\\backstretch\\" : ""
 		}
 	}
 }
