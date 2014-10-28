@@ -1,0 +1,639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>D:\Users\emmanuel.deveze\Documents\EidosMedia\emmanuel.deveze\home\DevZone\luna\00-SandBox\app\basic\vendor\raoul2000\yii2-backstretch-widget\assets\.README.md.html</title>
+
+
+<style type="text/css">
+body {
+	color: #333;
+	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
+	font-family: sans-serif;
+}
+
+.markdown-body {
+    border: 1px solid #CACACA;
+    padding: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    word-wrap: break-word;
+}
+.markdown-body > *:first-child {
+    margin-top: 0 !important;
+}
+.markdown-body > *:last-child {
+    margin-bottom: 0 !important;
+}
+.markdown-body a.absent {
+    color: #C00;
+}
+.markdown-body a.anchor {
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    left: 0;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-right: 6px;
+    position: absolute;
+    top: 0;
+}
+.markdown-body a.anchor:focus {
+    outline: medium none;
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+    cursor: text;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 1em 0 15px;
+    padding: 0;
+    position: relative;
+}
+
+.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
+    color: #000;
+    display: none;
+}
+.markdown-body h1:hover a.anchor, .markdown-body h2:hover a.anchor, .markdown-body h3:hover a.anchor, .markdown-body h4:hover a.anchor, .markdown-body h5:hover a.anchor, .markdown-body h6:hover a.anchor {
+    line-height: 1;
+    margin-left: -22px;
+    padding-left: 0;
+    text-decoration: none;
+    top: 15%;
+}
+.markdown-body h1:hover a.anchor .octicon-link, .markdown-body h2:hover a.anchor .octicon-link, .markdown-body h3:hover a.anchor .octicon-link, .markdown-body h4:hover a.anchor .octicon-link, .markdown-body h5:hover a.anchor .octicon-link, .markdown-body h6:hover a.anchor .octicon-link {
+    display: inline-block;
+}
+.markdown-body h1 tt, .markdown-body h1 code, .markdown-body h2 tt, .markdown-body h2 code, .markdown-body h3 tt, .markdown-body h3 code, .markdown-body h4 tt, .markdown-body h4 code, .markdown-body h5 tt, .markdown-body h5 code, .markdown-body h6 tt, .markdown-body h6 code {
+    font-size: inherit;
+}
+.markdown-body h1 {
+    border-bottom: 1px solid #DDD;
+    font-size: 2.5em;
+}
+.markdown-body h2 {
+    border-bottom: 1px solid #EEE;
+    font-size: 2em;
+}
+.markdown-body h3 {
+    font-size: 1.5em;
+}
+.markdown-body h4 {
+    font-size: 1.2em;
+}
+.markdown-body h5 {
+    font-size: 1em;
+}
+.markdown-body h6 {
+    color: #777;
+    font-size: 1em;
+}
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+    margin: 15px 0;
+}
+.markdown-body hr {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC") repeat-x;
+    border: 0;
+    color: #CCC;
+    height: 4px;
+    margin: 15px 0;
+    padding: 0;
+}
+.markdown-body ul, .markdown-body ol {
+    padding-left: 30px;
+}
+.markdown-body ul.no-list, .markdown-body ol.no-list {
+    list-style-type: none;
+    padding: 0;
+}
+.markdown-body ul ul, .markdown-body ul ol, .markdown-body ol ol, .markdown-body ol ul {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.markdown-body dl {
+    padding: 0;
+}
+.markdown-body dl dt {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 0;
+}
+.markdown-body dl dd {
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+.markdown-body blockquote {
+    border-left: 4px solid #DDD;
+    color: #777;
+    padding: 0 15px;
+}
+.markdown-body blockquote > *:first-child {
+    margin-top: 0;
+}
+.markdown-body blockquote > *:last-child {
+    margin-bottom: 0;
+}
+.markdown-body table {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+.markdown-body table th {
+    font-weight: bold;
+}
+.markdown-body table th, .markdown-body table td {
+    border: 1px solid #DDD;
+    padding: 6px 13px;
+}
+.markdown-body table tr {
+    background-color: #FFF;
+    border-top: 1px solid #CCC;
+}
+.markdown-body table tr:nth-child(2n) {
+    background-color: #F8F8F8;
+}
+.markdown-body img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 0px;
+}
+.markdown-body span.frame {
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.frame > span {
+    border: 1px solid #DDD;
+    display: block;
+    float: left;
+    margin: 13px 0 0;
+    overflow: hidden;
+    padding: 7px;
+    width: auto;
+}
+.markdown-body span.frame span img {
+    display: block;
+    float: left;
+}
+.markdown-body span.frame span span {
+    clear: both;
+    color: #333;
+    display: block;
+    padding: 5px 0 0;
+}
+.markdown-body span.align-center {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.align-center > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: center;
+}
+.markdown-body span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+.markdown-body span.align-right {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.align-right > span {
+    display: block;
+    margin: 13px 0 0;
+    overflow: hidden;
+    text-align: right;
+}
+.markdown-body span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+.markdown-body span.float-left {
+    display: block;
+    float: left;
+    margin-right: 13px;
+    overflow: hidden;
+}
+.markdown-body span.float-left span {
+    margin: 13px 0 0;
+}
+.markdown-body span.float-right {
+    display: block;
+    float: right;
+    margin-left: 13px;
+    overflow: hidden;
+}
+.markdown-body span.float-right > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: right;
+}
+.markdown-body code, .markdown-body tt {
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    margin: 0 2px;
+    padding: 0 5px;
+}
+.markdown-body code {
+    white-space: nowrap;
+}
+.markdown-body pre > code {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+}
+.markdown-body .highlight pre, .markdown-body pre {
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+}
+.markdown-body pre code, .markdown-body pre tt {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    word-wrap: normal;
+}
+
+pre, code, tt {
+    font-family: Consolas,"Liberation Mono",Courier,monospace;
+    font-size: 12px;
+}
+
+.highlight {
+    background: #FFF;
+}
+.highlight .k,
+.highlight .o,
+.highlight .cp,
+.highlight .cs,
+.highlight .gs,
+.highlight .gu,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .nc,
+.highlight .ne,
+.highlight .nf,
+.highlight .ow {
+    font-weight: bold;
+}
+.highlight .gd,
+.highlight .gd .x,
+.highlight .gi,
+.highlight .gi .x,
+.type-csharp .highlight .nf,
+.type-csharp .highlight .nn {
+    color: #000;
+}
+.highlight .c,
+.highlight .cm,
+.highlight .c1 {
+    color: #998;
+    font-style: italic;
+}
+.highlight .err {
+    background-color: #E3D2D2;
+    color: #A61717;
+}
+.highlight .cp,
+.highlight .cs {
+    color: #999;
+}
+.highlight .cs,
+.highlight .ge {
+    font-style: italic;
+}
+.highlight .gd {
+    background-color: #FDD;
+}
+.highlight .gd .x {
+    background-color: #FAA;
+}
+.highlight .gr,
+.highlight .gt {
+    color: #A00;
+}
+.highlight .gh {
+    color: #999;
+}
+.highlight .gi {
+    background-color: #DFD;
+}
+.highlight .gi .x {
+    background-color: #AFA;
+}
+.highlight .go {
+    color: #888;
+}
+.highlight .gp,
+.highlight .nn {
+    color: #555;
+}
+.highlight .gu,
+.highlight .ni {
+    color: #800080;
+}
+.highlight .kt {
+    color: #458;
+}
+.highlight .m {
+    color: #099;
+}
+.highlight .s {
+    color: #D14;
+}
+.highlight .n {
+    color: #333;
+}
+.highlight .na,
+.highlight .no,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+    color: #008080;
+}
+.highlight .nb {
+    color: #0086B3;
+}
+.highlight .nc {
+    color: #458;
+}
+.highlight .ne,
+.highlight .nf {
+    color: #900;
+}
+.highlight .nt {
+    color: #000080;
+}
+.highlight .w {
+    color: #BBB;
+}
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo {
+    color: #099;
+}
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .s1 {
+    color: #D14;
+}
+.highlight .sr {
+    color: #009926;
+}
+.highlight .ss {
+    color: #990073;
+}
+.highlight .bp {
+    color: #999;
+}
+.highlight .il {
+    color: #099;
+}
+.highlight .gc {
+    background-color: #EAF2F5;
+    color: #999;
+}
+.type-csharp .highlight .k,
+.type-csharp .highlight .kt {
+    color: #00F;
+}
+.type-csharp .highlight .nf {
+    font-weight: normal;
+}
+.type-csharp .highlight .nc {
+    color: #2B91AF;
+}
+.type-csharp .highlight .s,
+.type-csharp .highlight .sc {
+    color: #A31515;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+function getDocumentScrollTop() 
+{
+   var res = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset || 0;
+   // alert(res);
+   return res;
+}
+
+function setDocumentScrollTop(ypos) 
+{
+	window.scrollTo(0, ypos);
+}
+
+</script>
+
+
+</head>
+<body class="markdown-body">
+<h1> <a name="backstretch" class="anchor" href="#backstretch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Backstretch</h1> 
+<p>Backstretch is a simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element. The image will stretch to fit the page/element, and will automatically resize as the window/element size changes.</p> 
+<h2> <a name="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2> 
+<p>There are a couple of examples included with this package, or feel free to check it out live <a href="http://srobbin.com/jquery-plugins/backstretch/">on the project page itself</a>.</p> 
+<h2> <a name="setup" class="anchor" href="#setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup</h2> 
+<p>Include the jQuery library (version 1.7 or newer) and Backstretch plugin files in your webpage (preferably at the bottom of the page, before the closing BODY tag):</p> 
+<div class="highlight highlight-html">
+ <pre><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;jquery.backstretch.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+  <span class="c1">// To attach Backstrech as the body's background</span>
+  <span class="nx">$</span><span class="p">.</span><span class="nx">backstretch</span><span class="p">(</span><span class="s2">&quot;path/to/image.jpg&quot;</span><span class="p">);</span>
+
+  <span class="c1">// You may also attach Backstretch to a block-level element</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.foo&quot;</span><span class="p">).</span><span class="nx">backstretch</span><span class="p">(</span><span class="s2">&quot;path/to/image.jpg&quot;</span><span class="p">);</span>
+
+  <span class="c1">// Or, to start a slideshow, just pass in an array of images</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.foo&quot;</span><span class="p">).</span><span class="nx">backstretch</span><span class="p">([</span>
+    <span class="s2">&quot;path/to/image.jpg&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;path/to/image2.jpg&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;path/to/image3.jpg&quot;</span>    
+  <span class="p">],</span> <span class="p">{</span><span class="nx">duration</span><span class="o">:</span> <span class="mi">4000</span><span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre>
+</div> 
+<h2> <a name="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2> 
+<table> 
+ <thead> 
+  <tr> 
+   <th>Name</th> 
+   <th>Description</th> 
+   <th>Type</th> 
+   <th>Default</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td><code>centeredX</code></td> 
+   <td>The ratio of the width/height of the image doesn't always jive with the width/height of the window. This parameter controls whether or not we center the image on the X axis to account for the discrepancy.</td> 
+   <td>Boolean</td> 
+   <td>true</td> 
+  </tr> 
+  <tr> 
+   <td><code>centeredY</code></td> 
+   <td>This parameter controls whether or not we center the image on the Y axis to account for the aforementioned discrepancy.</td> 
+   <td>Boolean</td> 
+   <td>true</td> 
+  </tr> 
+  <tr> 
+   <td><code>fade</code></td> 
+   <td>This is the speed at which the image will fade in. Integers in milliseconds are accepted, as well as standard jQuery speed strings (slow, normal, fast).</td> 
+   <td>Integer or String</td> 
+   <td>0</td> 
+  </tr> 
+  <tr> 
+   <td><code>duration</code></td> 
+   <td>The amount of time in between slides, when using Backstretch as a slideshow, expressed as the number of milliseconds.</td> 
+   <td>Integer</td> 
+   <td>5000</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2> <a name="slideshow-api" class="anchor" href="#slideshow-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>Slideshow API</h2> 
+<p>Once you've instantiated a Backstretch slideshow, there are many actions that you can perform it:</p> 
+<div class="highlight highlight-javascript">
+ <pre><span class="c1">// Start a slideshow</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.foo'</span><span class="p">).</span><span class="nx">backstretch</span><span class="p">([</span>
+  <span class="s1">'path/to/image.jpg'</span><span class="p">,</span>
+  <span class="s1">'path/to/image2.jpg'</span><span class="p">,</span>
+  <span class="s1">'path/to/image3.jpg'</span>
+<span class="p">]);</span>
+
+<span class="c1">// Pause the slideshow</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.foo'</span><span class="p">).</span><span class="nx">backstretch</span><span class="p">(</span><span class="s2">&quot;pause&quot;</span><span class="p">);</span>
+
+<span class="c1">// Advance to the next slide</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'.foo'</span><span class="p">).</span><span class="nx">backstretch</span><span class="p">(</span><span class="s2">&quot;next&quot;</span><span class="p">);</span>
+</pre>
+</div> 
+<table> 
+ <thead> 
+  <tr> 
+   <th>Method</th> 
+   <th>Description</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td><code>.backstretch(&quot;show&quot;, n)</code></td> 
+   <td>Jump to the slide at a given index, where n is the number of the image that you'd like to display. Slide number starts at 0.</td> 
+  </tr> 
+  <tr> 
+   <td><code>.backstretch(&quot;prev&quot;)</code></td> 
+   <td>Display the previous image in a slideshow.</td> 
+  </tr> 
+  <tr> 
+   <td><code>.backstretch(&quot;next&quot;)</code></td> 
+   <td>Advance to the next image in a slideshow.</td> 
+  </tr> 
+  <tr> 
+   <td><code>.backstretch(&quot;pause&quot;)</code></td> 
+   <td>Pause the slideshow.</td> 
+  </tr> 
+  <tr> 
+   <td><code>.backstretch(&quot;resume&quot;)</code></td> 
+   <td>Resume a paused slideshow.</td> 
+  </tr> 
+  <tr> 
+   <td><code>.backstretch(&quot;destroy&quot;, preserveBackground)</code></td> 
+   <td>Destroy the Backstretch instance. Optionally, you can pass in a Boolean parameter, preserveBackground, to determine whether or not you'd like to keep the current image stretched as the background image.</td> 
+  </tr> 
+  <tr> 
+   <td><code>.backstretch(&quot;resize&quot;)</code></td> 
+   <td>This method is called automatically when the container (window or block-level element) is resized, however you can always call this manually if needed.</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h2> <a name="public-variables" class="anchor" href="#public-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Public Variables</h2> 
+<p>Sometimes, you'll want to access Backstretch's images after you've instantiated the plugin. For example, perhaps you'd like to be able add more images to a slideshow. Doing so is easy. You can access the images array as follows:</p> 
+<div class="highlight highlight-javascript">
+ <pre><span class="nx">$</span><span class="p">(</span><span class="s1">'.foo'</span><span class="p">).</span><span class="nx">backstretch</span><span class="p">([</span>
+  <span class="s1">'path/to/image.jpg'</span><span class="p">,</span>
+  <span class="s1">'path/to/image2.jpg'</span><span class="p">,</span>
+  <span class="s1">'path/to/image3.jpg'</span>
+<span class="p">]);</span>
+
+<span class="c1">// Access the instance</span>
+<span class="kd">var</span> <span class="nx">instance</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'.foo'</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'backstretch'</span><span class="p">);</span>
+
+<span class="c1">// Then, you can manipulate the images array directly</span>
+<span class="nx">instance</span><span class="p">.</span><span class="nx">images</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">'path/to/image4.jpg'</span><span class="p">)</span>
+</pre>
+</div> 
+<p>Additionally, the current index of a slideshow is available through the instance as well:</p> 
+<div class="highlight highlight-javascript">
+ <pre><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;body&quot;</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s2">&quot;backstretch&quot;</span><span class="p">).</span><span class="nx">index</span><span class="p">;</span>
+</pre>
+</div> 
+<h2> <a name="events" class="anchor" href="#events" aria-hidden="true"><span class="octicon octicon-link"></span></a>Events</h2> 
+<h3> <a name="backstretchbefore" class="anchor" href="#backstretchbefore" aria-hidden="true"><span class="octicon octicon-link"></span></a>backstretch.before</h3> 
+<p>Backstretch will fire a &quot;backstretch.before&quot; event before a new image loads, triggering a function that is passed the event, Backstretch instance, and index of the image that will be displayed. If you listen for that event, you can, for example, coordinate other changes to coincide with your slideshow.</p> 
+<div class="highlight highlight-javascript">
+ <pre><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;backstretch.before&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="nx">instance</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// If we wanted to stop the slideshow after it reached the end</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">index</span> <span class="o">===</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">images</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">instance</span><span class="p">.</span><span class="nx">pause</span><span class="p">();</span>
+  <span class="p">};</span>
+<span class="p">});</span>
+</pre>
+</div> 
+<h3> <a name="backstretchafter" class="anchor" href="#backstretchafter" aria-hidden="true"><span class="octicon octicon-link"></span></a>backstretch.after</h3> 
+<p>Backstretch will also fire a &quot;backstretch.after&quot; event after the new images has completed loading.</p> 
+<div class="highlight highlight-javascript">
+ <pre><span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;backstretch.after&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="nx">instance</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Do something</span>
+<span class="p">});</span>
+</pre>
+</div> 
+<h2> <a name="changelog" class="anchor" href="#changelog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changelog</h2> 
+<h3> <a name="version-20" class="anchor" href="#version-20" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 2.0</h3> 
+<ul> 
+ <li>Now accepts an array of images to create a slideshow</li> 
+ <li>Can attach Backstretch to any block-level element, not just the body</li> 
+ <li>Deprecated &quot;speed&quot; option in favor of &quot;fade&quot; for fadeIn timing</li> 
+ <li>Added &quot;duration&quot; option, and Slideshow API</li> 
+</ul> 
+<h3> <a name="version-12" class="anchor" href="#version-12" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 1.2</h3> 
+<ul> 
+ <li>You can now called backstretch twice, and it will replace the existing image.</li> 
+</ul> 
+<h3> <a name="version-11" class="anchor" href="#version-11" aria-hidden="true"><span class="octicon octicon-link"></span></a>Version 1.1</h3> 
+<ul> 
+ <li>Added 'centeredX' and 'centeredY' options.</li> 
+ <li>Removed 'hideUntilReady' option. It looks pretty bad if you don't hide the image until it's fully loaded.</li> 
+ <li>Fixed IE img onload bug.</li> 
+ <li>Now supports iPhone/iPad orientation changes.</li> 
+</ul>
+</body>
+</html>
