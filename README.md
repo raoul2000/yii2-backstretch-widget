@@ -64,6 +64,8 @@ the plugin.
 
 For complete documentation please refer to the [jquery-backstretch Github page](https://github.com/srobbin/jquery-backstretch)
 
+**If this plugin did not convinced you, have a look to the [Background Switcher Plugin](https://github.com/raoul2000/yii2-bgswitcher-widget)**
+
 License
 -------
 
