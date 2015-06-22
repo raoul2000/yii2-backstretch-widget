@@ -33,7 +33,7 @@ Note that the images are defined as local or remote. The second argument of *plu
 initialization settings that can be redefined if the default ones are not what you want.
 
 ```php
-	raoul2000\widget\backstrech\Backstrech::widget([
+	raoul2000\widget\backstretch\Backstretch::widget([
 		'selector' => '#elementId',
 		'pluginOptions' => [
 			[
@@ -51,13 +51,13 @@ initialization settings that can be redefined if the default ones are not what y
 	]);
 ```
 
-**To attach Backstrech as the body's background**
+**To attach Backstretch as the body's background**
 
 In its simplest form, attach an image to the background of the body element. Default settings are used to initialize 
 the plugin. 
 
 ```php
-	raoul2000\widget\backstrech\Backstrech::widget([
+	raoul2000\widget\backstretch\Backstretch::widget([
 		'pluginOptions' => 'path/to/image1.jpg'
 	]);
 ```
